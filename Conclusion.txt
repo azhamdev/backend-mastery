@@ -1,0 +1,13 @@
+1. Migration
+  - install sequelize
+  - migration adalah untuk berkaitan dengan table
+  - npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+  - tidak boleh ada spasi
+  - up untuk create table, down untuk drop tabel
+  - npx sequelize--cli db:migrate
+
+2. Seeder
+  - untuk mengolah data, tidak perlu minta query data
+  - untuk clone data yang sama
+  - npx sequelize-cli seed:generate --name demo-user
+  - gunakan bcryptjs untuk enskrip password
