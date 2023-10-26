@@ -11,3 +11,26 @@
   - untuk clone data yang sama
   - npx sequelize-cli seed:generate --name demo-user
   - gunakan bcryptjs untuk enskrip password
+
+
+///
+Auth 
+  SignIn
+1. saya perlu import dari models yang diperlukan
+2. saya mengimport bcrypt untuk enskripsi password dan dibaca oleh sistem 
+3. saya membuat module export suapaya bisa digunakan di luar main
+4. saya perlu menuliskan nama functionnya dan menggunakan async dengan arrow function
+5. dalam function memiliki 3 parameter req, res dan next
+6. try catch untuk menangani error
+7. memanggil model user untuk menampilkan data
+8. chek user menggunakan await untuk memanggil 1 data dengan dicek email untuk validasi
+9. jika ada maka akan dicek password
+10. mengenkripsi password
+11. jika password cocok maka login
+12. saya perlu menampilkan error dengan console.log dan next 
+13. Saya perlu return token, untuk menghandle transaksi dll, sehingga tidak bisa di by pass
+14. Saya gunakan JWT untuk generate token
+
+
+  Sign Up
+hampir mirip kayak signIn, cuman pake create variable user
